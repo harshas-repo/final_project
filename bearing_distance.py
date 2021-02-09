@@ -43,10 +43,8 @@ def bearing():
 # return math.degrees(math.atan2(x, y))
 
 
-def distance():
+def distance(lat1, long1):
     R = 6371000
-    lat1 = math.radians(13.026101239125405)
-    long1 = math.radians(80.01504296085217)
     bear = bearing()
     radbear = math.radians(72)
     print(f"bearing {bear}")
@@ -59,5 +57,7 @@ def distance():
     return
 
 
+lat1 = math.radians(13.026101239125405)
+long1 = math.radians(80.01504296085217)
 print(bearing())
-distance()
+distance(lat1, long1)
