@@ -1,3 +1,12 @@
+"""
+|----------+---------------+----------+-----------+------------|
+| DevID    | Date And Time | location | Hop Count | RSSI Value |
+|----------+---------------+----------+-----------+------------|
+| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 3 Byte     |
+|----------+---------------+----------+-----------+------------|
+
+TOTAL = 35 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
+"""
 from datetime import datetime as dt
 from baseconv import base36 as bs
 

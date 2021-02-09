@@ -39,23 +39,23 @@ Note to self : Breif the solution as soon as possible.
 [[https://docs.python.org/3/library/asyncio-protocol.html#asyncio-transports-protocols][UDP using asyncio]] This plays a major role in the communication.
 
 ** Message Format:
-|----------+---------------+----------+-----------+------------|
-| DevID    | Date And Time | location | Hop Count | RSSI Value |
-|----------+---------------+----------+-----------+------------|
-| 16 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 3 Byte     |
-|----------+---------------+----------+-----------+------------|
+|----------+---------------+----------+-----------|
+| DevID    | Date And Time | location | Hop Count |
+|----------+---------------+----------+-----------|
+| 16 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    |
+|----------+---------------+----------+-----------|
 
-TOTAL = 40 Bytes (yet to figure out a way to reduce the size of the DevID)
+TOTAL = 38 Bytes (yet to figure out a way to reduce the size of the DevID)
 Hash of the message is yet to be added to the message once the final size is confirmed.
 
 + Updated
-|----------+---------------+----------+-----------+------------|
-| DevID    | Date And Time | location | Hop Count | RSSI Value |
-|----------+---------------+----------+-----------+------------|
-| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 3 Byte     |
-|----------+---------------+----------+-----------+------------|
+|----------+---------------+----------+-----------|
+| DevID    | Date And Time | location | Hop Count |
+|----------+---------------+----------+-----------|
+| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    |
+|----------+---------------+----------+-----------|
 
-TOTAL = 35 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
+TOTAL = 32 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
 
 =TODO: Hash of the message is yet to be added to the message once the final size is confirmed.=
 
