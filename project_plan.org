@@ -1,0 +1,50 @@
+#+TITLE: Final Year Project Plan With Timeline
+#+AUTHOR: Harshavardhan Reddy B
+#+DESCRIPTION: Project plan and architecture of the project with refernces and detailed notes.
+
+*   References:
+
+ + [[duckduckgo:https://flora.aalto.fi/][FLoRa Home Page]] [[github:mariuszslabicki/flora][FLoRa Github Repo]]
+
+   : Refer this project for scenrio building, adaptive data rate and other LoRa physical layer specifics.
+
+
+* TODO :
+
+** Scenario Generator:
+
+ + choose location co-ordinates over 10 - 15km range as start and endpoints of the simulation.
+ + Density of nodes : high, low and ADR check with message format test.
+    : Note create comma separated vlaue files with node and node attirbutes, nodes are distributed based on the density factor across various locations based on the path in the scenario.
+   
+        =Attributes= nodeID, Current Location (lat , long), bearing.
+       
+**  Integrtion of GIS(Geographic Information System) functions:
+
+[[https://stackoverflow.com/questions/4308262/calculate-compass-bearing-heading-to-location-in-android][Bearing]] : Caliculate based on the start and end point of the path in the map.
+
+[[https://stackoverflow.com/questions/365826/calculate-distance-between-2-gps-coordinates][Calcualate distance between two GPS co-ordinates]]
+
+[[https://stackoverflow.com/questions/19803604/increment-meters-to-latitude-and-longitude][Calculate the position after a meter increment for the given GPS co-ordinates]]
+
+=Solving the problem in  clustering=
+
+Appending one in to the message to stop relaying the message, Only stop if message recieved has '0' previously, else continue. It is dependent on RSSI (Recieved Signal Strength Indicator) too.
+Note to self : Breif the solution as soon as possible.
+
+**  Packages:
+
+[[https://pypi.org/project/python-baseconv/][pip install python-baseconv]]
+
+[[https://docs.python.org/3/library/asyncio-protocol.html#asyncio-transports-protocols][UDP using asyncio]] This plays a major role in the communication.
+
+** Message Format:
+|----------+---------------+----------+-----------+------------|
+| DevID    | Date And Time | location | Hop Count | RSSI Value |
+|----------+---------------+----------+-----------+------------|
+| 16 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 3 Byte     |
+|----------+---------------+----------+-----------+------------|
+
+TOTAL = 39 Bytes (yet to figure out a way to reduce the size of the DevID)
+Hash of the message is yet to be added to the message once the final size is confirmed.
+
