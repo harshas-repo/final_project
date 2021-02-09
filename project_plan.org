@@ -45,6 +45,21 @@ Note to self : Breif the solution as soon as possible.
 | 16 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 3 Byte     |
 |----------+---------------+----------+-----------+------------|
 
-TOTAL = 39 Bytes (yet to figure out a way to reduce the size of the DevID)
+TOTAL = 40 Bytes (yet to figure out a way to reduce the size of the DevID)
 Hash of the message is yet to be added to the message once the final size is confirmed.
 
++ Updated
+|----------+---------------+----------+-----------+------------|
+| DevID    | Date And Time | location | Hop Count | RSSI Value |
+|----------+---------------+----------+-----------+------------|
+| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 3 Byte     |
+|----------+---------------+----------+-----------+------------|
+
+TOTAL = 35 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
+
+=TODO: Hash of the message is yet to be added to the message once the final size is confirmed.=
+
+DevID = Country ( 2 characters ) + State ( 2 Characters ) + Vehicle Type ( Based on no.of tyres ) 11 Bytes
+[Random vehilce ID between (0, 999,999,999) is converted to base 36 to reduce the size)]
+
+Maximum: Each category of vehicle in each state of a country can have 999,999,999 vehicles
