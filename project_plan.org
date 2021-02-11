@@ -52,10 +52,10 @@ Hash of the message is yet to be added to the message once the final size is con
 |----------+---------------+----------+-----------+--------------|
 | DevID    | Date And Time | location | Hop Count | CRC ( temp ) |
 |----------+---------------+----------+-----------+--------------|
-| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 8 Bytes      |
+| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 10 Bytes     |
 |----------+---------------+----------+-----------+--------------|
 
-TOTAL = 40 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
+TOTAL = 42 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
 
 =TODO: Hash of the message is yet to be added to the message once the final size is confirmed.=
 
