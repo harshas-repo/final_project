@@ -1,0 +1,66 @@
+#+TITLE: Title 1 ( Task 2 )
+#+AUTHOR: Harshavardhan B
+
+
+* Materials and methods
+
+** Title 1:
+
+=A Latency Analysis in Vehicular Ad Hoc Networks Based-on LoRaWAN using Cluster-Based Multi-hop Dissemination for Effective Emergency Communication in Comparison with Multi-hop Dissemination Algorithm=
+
+*** Paragraph 1
+- Study setting - university or lab:
+
+  Department of CSE, Saveetha School of Engineering, Saveetha Institute of Medical and Technical Sciences, Chennai, TamilNadu.
+- Ethical approval if working on human samples
+
+  NA
+- No: of groups: 2
+- Sample size : 98/group
+- Pre test Power (use g power)
+
+  NA ( No dataset is used )
+
+*** Paragraph 2
+- Sample preparation group 1
+  Node density, path, speed, location, latency ( n - n, n - d ), Gateway density, range (in meters covered by node and gateway).
+  8 data items
+
+*** Paragraph 3
+- Sample preparation group 2
+  Node density, path, speed, location, latency ( n - n, n - d ), Gateway density, range (in meters covered by node and gateway).
+  8 data items
+
+*** Paragraph 4
+- Testing set up
+ 
+  + Tested the algorithm on the osX platform.
+  + Hardware environment includes a consumer-level PC with an Intel Core i5 7th Gen
+    , 8G RAM.
+  + Software environment: Python3, Simpy, asyncIO, LoRaenv, GIS ( Global information system definition ).
+
+- Testing procedure
+
+  + Based on GIS ( Global Information System ), start and stop locations are defined in simulation environment.
+  + LoRa environment is manually defined to support adaptive data rate and latencies based on the spread factor.
+  + Simpy is defined to start the simulation environment that is dependent of GISenv and LoRaenv.
+  + Routing algorithm will be programmed based on the GISenv, LoRaenv and simpy.
+  + asncIO is used to perform tasks asychronously, enabling nodes to perform tasks concurrently.
+  + Finally, necessary data items are analysed and visualised using Tableau software.
+
+*** Paragraph 5
+- Data collection
+
+  Data is collected during the simulation, major attributes are,
+
+  + Node Density.
+  + Path followed to reach the destination.
+  + Speed and Location change of the node.
+  + Latency from node to node and node to destination. ( Averages are considered based on the node density )
+  + Gateway density. ( City, Rural and Urban )
+
+*** Paragraph 6
+- Statistical software used : Tableau Desktop, matplotlib, Tableau Prep Builder.
+- Independent variables : Vehicle Type, DevId.
+- Dependant variables : Hop count, location, bearing, RSSI ( Received signal strength )
+- Analysis done.

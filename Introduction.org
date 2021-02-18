@@ -54,19 +54,38 @@
      =Author= Luca Sciullo, Angelo Trotta, Marco Di Felice
      =Details= August 2019 Keywords:Internet of things (IoT)Lora technology Emergency communication system (ECS) Data dissemination protocols Performance evaluation
 
+     : Findings:
+
+   1. Optimal transmission probability of the dissemination protocol.
+   2. Self-localization algorithm implementing a trilateration technique, and a multi-hop dissemination scheme which combines probabilistic DTN( Delay tolerant networks ) and biased-contention mechanisms.
+
      =Title 2= A Survey of LoRaWAN for IoT: From Technology to Application. Sensors. 18. 3995. 10.3390/s18113995.
      =Author= Haxhibeqiri, Jetmir & De Poorter, Eli & Moerman, Ingrid & Hoebeke, Jeroen.
      =Details= Published in 2018.
-    
+
+     : Findings:
+
+   1. SWOT analysis of LoRaWAN
+   2. IoT applications and deployments that already use LoRaWAN as the underlying wireless network technology.
+     
      =Title 3= Mobility Aware Multihop Clustering based Safety Message Dissemination in Vehicular Ad-hoc Network
      =Author= Nishu Gupta Ph.D. Scholar Dr. Arun Prakash Assistant Professor Dr. Rajeev Tripathi Professor
      =Details= International Journal of Computer Science and Information Security (IJCSIS), Vol. 14, No. 3, March 2016
+    
+     : Findings:
+
+   1. The protocol harnesses the clustering based TDMA scheme for multihop message dissemination in inter- vehicular communication
+   2. Protocol offers full distribution and does not require a cluster-head selection.
 
      =Title 4=  Multi-Hop LoRa Networks Enabled by Concurrent Transmission. IEEE Access. PP. 1-1. 10.1109/ACCESS.2017.2755858.
      =Author= Liao, Chun-Hao & Zhu, Guibing & Kuwabara, Daiki & Suzuki, Makoto & Morikawa, Hiroyuki.
      =Details= Published year (2017).
 
-    
+     : Findings:
+
+   1. Verification of tolerance with respect to the collision in LoRa.
+   2. Implementation of time offset to increases the probability of survival of collision.
+
 3. Overall which is the best study in you opinion. ( cite 1 ).
      : Citations:
     
@@ -137,19 +156,40 @@
      =Author= Andrew Mackey and Petros Spachos
      =Details= International Journal of Computer Science and Information Security (IJCSIS), Vol. 14, No. 3, March 2016
 
-     =Title 2= Mobility Aware Multihop Clustering based Safety Message Dissemination in Vehicular Ad-hoc Network
-     =Author= Nishu Gupta Ph.D. Scholar Dr. Arun Prakash Assistant Professor Dr. Rajeev Tripathi Professor
-     =Details= International Journal of Computer Science and Information Security (IJCSIS), Vol. 14, No. 3, March 2016
+     : Findings:
 
-     =Title 3= IoT System Integrating Unmanned Aerial Vehicles and LoRa Technology: A Performance Evaluation Study
-     =Author= J.-M. Martinez-Caro and M.-D. Cano
-     =Details= Received 26 July 2019; Revised 1 October 2019; Accepted 9 October 2019; Published 3 November 2019
+   1. LoRa positioning accuracy with added state-estimation filtersl.
+   2. The clear benefit of LoRa technology is the low power consumption that it offers, as well as the simple integration of localized environmental sensory data.
 
-     =Title 4= Ad-hoc network possibilities inside LoRaWAN
-     =Author=  DANIEL LUNDELL
-     =Details= Department of Electrical and Information Technology Lund University. Published on June 21, 2017.
-    
+   =Title 2= Mobility Aware Multihop Clustering based Safety Message Dissemination in Vehicular Ad-hoc Network
+   =Author= Nishu Gupta Ph.D. Scholar Dr. Arun Prakash Assistant Professor Dr. Rajeev Tripathi Professor
+   =Details= International Journal of Computer Science and Information Security (IJCSIS), Vol. 14, No. 3, March 2016
+  
+     : Findings:
+
+   1. The protocol harnesses the clustering based TDMA scheme for multihop message dissemination in inter- vehicular communication
+   2. Protocol offers full distribution and does not require a cluster-head selection.
+     
+   =Title 3= IoT System Integrating Unmanned Aerial Vehicles and LoRa Technology: A Performance Evaluation Study
+   =Author= J.-M. Martinez-Caro and M.-D. Cano
+   =Details= Received 26 July 2019; Revised 1 October 2019; Accepted 9 October 2019; Published 3 November 2019
+
+     : Findings:
+
+   1. Location aided navigation of nodes.
+   2. Working of Adhoc Networks in multiple dimensions.
+     
+   =Title 4= Ad-hoc network possibilities inside LoRaWAN
+   =Author=  DANIEL LUNDELL
+   =Details= Department of Electrical and Information Technology Lund University. Published on June 21, 2017.
+
+        : Findings:
+
+   1. Data overhead identification for advanced routing protocols.
+   2. Understanding packet collisions and differnet overheads in various protocols.
+
 3. Overall which is the best study in you opinion. ( cite 1 ).
+  
      : Citations
      =Title 1= LoRa-based Localization System for Emergency Services in GPS-less Environments
      =Author= Andrew Mackey and Petros Spachos
