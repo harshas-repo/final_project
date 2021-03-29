@@ -2,10 +2,10 @@
 |----------+---------------+----------+-----------+--------+--------------|
 | DevID    | Date And Time | location | Hop Count | GFlag  | CRC ( temp ) |
 |----------+---------------+----------+-----------+--------+--------------|
-| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 1 Byte | 10 Bytes     |
+| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 1 Byte | 7/8 Bytes     |
 |----------+---------------+----------+-----------+--------+--------------|
 
-TOTAL = 40 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
+TOTAL = 39/40 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
 
 DevID = Country ( 2 characters ) + State ( 2 Characters ) + Vehicle Type ( Based on no.of tyres ) 11 Bytes
 [Random vehilce ID between (0, 999,999,999) is converted to base 36 to reduce the size)]
@@ -95,3 +95,13 @@ print("devid_len:{}, datlen:{}, loclen:{}, hopcount:1, GFlag:1, CRClen:{}".forma
 # dat = length date and time
 # loclen = location_length
 # crclen = CRC_length
+
+# OUTPUT
+# length encoded message without CRC: 33
+# encoded message without CRC: INAP47xwku73pddrjj107r7051bn00201
+# Lenght of CRC: 7
+# encoded message with CRC: INAP47xwku73pddrjj107r7051bn0020115xnh3j
+# Final packet with crc appended: 40
+# Length of unencoded_msg: 85
+# enlat:07r705, enlong:1bn002
+# devid_len:11, datlen:8, loclen:12, hopcount:1, GFlag:1, CRClen:7
