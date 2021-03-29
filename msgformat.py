@@ -2,7 +2,7 @@
 |----------+---------------+----------+-----------+--------+--------------|
 | DevID    | Date And Time | location | Hop Count | GFlag  | CRC ( temp ) |
 |----------+---------------+----------+-----------+--------+--------------|
-| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 1 Byte | 7/8 Bytes     |
+| 11 Bytes | 8 Bytes       | 12 Bytes | 1 Byte    | 1 Byte | 6/7 Bytes     |
 |----------+---------------+----------+-----------+--------+--------------|
 
 TOTAL = 39/40 Bytes ( DevID is switched from IPv6 to custom format mentioned below)
